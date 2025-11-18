@@ -1,0 +1,1 @@
+'''(problema sem def)...Construa um algoritmo que receba valores float para um vetor de 8 posições. Após receber os dados, apresente qual é o maior e o menor valor, a soma e a média de todos os valores. Utilize as funções Python: max, min, len, sum'''

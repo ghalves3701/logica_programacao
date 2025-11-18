@@ -13,14 +13,16 @@ def main():
     ''')
     op = int(input('Digite 1, 2, 3 ou 9 para sair: '))
     def cadastro():
-        nome.append(input('Nome: '))
+        nome.append(input('Nome: ')) #append = auto incremento
         telefone.append(input('Telefone: '))
     def relatorio():
         for i in range (len(nome)):
             print(f'{i} - {nome[i]} - {telefone[i]}')
     def alterar():
-        if (len(nome)) and (len(telefone)) == 0:
-            print('Cadastro vazio')
+        if (len(nome))==0 and len(telefone) == 0:
+            print('''
+                                Cadastro vazio
+                  Por favor, cadastre um usuário primeiro!''')
             main()
         else:
             relatorio()
