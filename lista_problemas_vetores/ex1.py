@@ -9,14 +9,16 @@ def main():
       print('\nValores já cadastrados!')
     else:
       print('\nLoop For com append em valor:')
-      for i in range (9):
+      for i in range (10):
         valor.append(int(input(f'Digite o {i+1}º valor: ')))
+
   def contarnegativos():
     global negativos #variáveis 'não vetor' declaradas como globais
     negativos = 0 #zerar para contar novamente 
     for i in range (len(valor)) : #Programar for i ... len(valor).. com if para contar negativos 
       if valor[i] < 0:
         negativos += 1
+        print(f'Negativo: {valor[i]}')
 
   def contarpositivos():
     global positivos #variáveis 'não vetor' declaradas como globais 
@@ -24,6 +26,8 @@ def main():
     for i in range (len(valor)): #Programar for i ... len(valor).. com if para contar positivos
       if valor [i]>=0:
         positivos += 1
+        print(f'Positivo: {valor[i]}')
+        
   if (op == 1):
     lervalor()
     main() 

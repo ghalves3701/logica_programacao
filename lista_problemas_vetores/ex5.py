@@ -10,3 +10,18 @@ Carlos     8.0
 Pedro      5.0
 ...
 Média da classe = ??'''
+
+nome=[]
+nota=[]
+for i in range (3):
+    nome.append(str(input(f'Entre com o nome do {i+1}º aluno: ')))
+    nota.append(float(input(f'Entre com a nota no {nome[i]}: ')))
+print(f'''
+=====Relatório de notas=====
+    Aluno             nota
+''')
+for i in range (len(nome)):
+    print(f'''
+{nome[i]}          {nota[i]}''')
+media=sum(nota)/len(nota)
+print(f'\nA média da sala foi: {media}\n')

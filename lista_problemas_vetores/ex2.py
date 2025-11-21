@@ -5,7 +5,7 @@
 - Ao final, apresente quantos valores foram encontrados.'''
 vetor=[]
 cont=0
-for i in range (14):
+for i in range (15):
     vetor.append(int(input(f'Digite o {i+1}º valor: ')))
 procurar=int(input('Entre com um valor para localizar: '))
 for i in range(len(vetor)):
