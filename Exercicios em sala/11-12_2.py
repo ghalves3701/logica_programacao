@@ -28,11 +28,11 @@ def main():
             relatorio()
             posicao=int(input('Qual item você deseja alterar?: '))
             nome2=input('Entre com o nome: ')
-        if nome2 != '':
-            nome[posicao]=nome2
-        telefone2=input('Entre com o telefone: ')
-        if telefone2 != '':
-            telefone[posicao]=telefone2
+            if nome2 != '':
+                nome[posicao]=nome2
+            telefone2=input('Entre com o telefone: ')
+            if telefone2 != '':
+                telefone[posicao]=telefone2
 
     if op ==1:
         cadastro()
